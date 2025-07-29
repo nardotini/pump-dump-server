@@ -7,7 +7,7 @@ import asyncio
 import logging
 import sys
 import os
-from aiogram import Bot, Dispatcher, F
+from aiogram import Bot, Dispatcher, 
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 from dotenv import load_dotenv
@@ -753,10 +753,9 @@ async def main():
     
     await db.init_pool()
     print("✅ Database connected")
-    
     # Start WebSocket server
-    websocket_task = asyncio.create_task(websocket_server.start_server())
-    print("🔌 WebSocket server starting...")
+    #websocket_task = asyncio.create_task(websocket_server.start_server())
+    #print("🔌 WebSocket server starting...")
     
     await asyncio.sleep(2)  # Give WebSocket time to start
     
