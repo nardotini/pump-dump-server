@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "python main_with_websocket.py",
+    "healthcheckPath": "/health"
+  }
+}
