@@ -753,9 +753,9 @@ async def main():
     
     await db.init_pool()
     print("✅ Database connected")
-    # Start WebSocket server
-    #websocket_task = asyncio.create_task(websocket_server.start_server())
-    #print("🔌 WebSocket server starting...")
+    Start WebSocket server
+    websocket_task = asyncio.create_task(websocket_server.start_server())
+    print("🔌 WebSocket server starting...")
     
     await asyncio.sleep(2)  # Give WebSocket time to start
     
