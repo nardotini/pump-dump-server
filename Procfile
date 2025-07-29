@@ -1,1 +1,1 @@
-web: python main_with_websocket.py
+web: python railway_main.py
